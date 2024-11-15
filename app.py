@@ -28,7 +28,7 @@ if not st.session_state.popup_closed:
     if st.button("确认选择"):
         st.session_state.popup_closed = True
         # Determine if the selection represents "过程" or "结果"
-        st.session_state.user_choice = "过程" if user_selection >= 4 else "结果"
+        st.session_state.user_choice = "结果" if user_selection >= 4 else "过程"
         st.rerun()  # 强制页面刷新
 
 # Main content (only displayed if popup is closed)
