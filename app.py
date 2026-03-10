@@ -22,7 +22,10 @@ if "user_choice" not in st.session_state:
 
 # Display popup only if it hasn't been closed
 if not st.session_state.popup_closed:
-    st.write("### 您更倾向过程/结果哪个更重要？")
+    st.write("### 你所在的社团需要为招新活动选择宣传物料设计风格，你被邀请参加方案讨论会，需要建议设计方向：选大众喜欢的和选小众特色的，哪种方式更好？
+在讨论会上，你需要代表你所在的小组阐述立场，你的发言将直接影响最终的设计选择以及招新效果和社团形象。
+在正式发言前，你已经对该问题形成了一个初步看法。为了进一步完善自己的观点，你决定参考AI对该议题的分析。
+接下来，请阅读AI的分析内容，并根据你的真实感受回答后续问题。")
     user_selection = st.slider("1=“非常倾向认为过程”；2=“比较倾向认为过程”；3=“倾向认为过程”；4=“无明显倾向”；5=“倾向认为结果”；6=“比较倾向认为结果”；7=“非常倾向认为结果”", 1, 7, 4)
     
     if st.button("确认选择"):
@@ -42,7 +45,8 @@ if st.session_state.popup_closed and st.session_state.user_choice is not None:
         st.markdown("### 点击“发送”按钮即可获取回复")
 
     # User input section
-    user_input = st.text_input("请点击按钮发送您的问题：", value="您更倾向过程/结果哪个更重要？")
+    user_input = st.text_input("请点击按钮发送您的问题：", value="我所在的社团需要为招新活动选择宣传物料设计风格，我被邀请参加方案讨论会，需要建议设计方向：选大众喜欢的和选小众特色的，哪种方式更好？
+在讨论会上，我需要代表我所在的小组阐述立场，我的发言将直接影响最终的设计选择以及招新效果和社团形象。")
 
     # Send button to process user input
     if st.button("发送"):
