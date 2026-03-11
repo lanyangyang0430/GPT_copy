@@ -1,10 +1,12 @@
 import streamlit as st
 import time
 
-# Define response dictionary
+# Define response dictionary - 修复字符串结束符
 response_dict = {
     "大众": """
-我觉得选大众喜欢的那个就行。大多数人喜欢的东西肯定比较稳妥，不容易出错。大家一起聊天的时候，有共同话题才能聊起来，小众的东西万一没人知道就冷场了。先保证聊得开心最重要，气氛好了什么都好说。跟着大家走一般不会踩雷，省事。}
+我觉得选大众喜欢的那个就行。大多数人喜欢的东西肯定比较稳妥，不容易出错。大家一起聊天的时候，有共同话题才能聊起来，小众的东西万一没人知道就冷场了。先保证聊得开心最重要，气氛好了什么都好说。跟着大家走一般不会踩雷，省事。
+"""
+}
 
 # Set page title and icon
 st.set_page_config(page_title="大语言模型", page_icon="🤖", layout="centered")
