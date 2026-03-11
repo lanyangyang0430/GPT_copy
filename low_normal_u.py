@@ -53,8 +53,8 @@ if st.session_state.popup_closed and st.session_state.user_choice is not None:
     
     user_input = st.text_area(
         label="问题输入框",
-        value="""我所在的社团需要为招新活动选择宣传物料设计风格，我被邀请参加方案讨论会，需要建议设计方向：选大众喜欢的和选小众特色的，哪种方式更好？
-在讨论会上，我需要代表我所在的小组阐述立场，我的发言将直接影响最终的设计选择以及招新效果和社团形象。""",
+        value="""假设你在一次朋友聚会中，大家随意聊到“选择东西时，选大众喜欢的和选小众特色的，哪种方式更好”这个话题。你已经对该问题有一个初步想法。出于好奇，你决定看看AI会怎么分析这个话题。
+接下来，请阅读AI的分析内容，并根据你的真实感受回答后续问题。""",
         height=200,
         label_visibility="collapsed"  # 隐藏label，因为上面已经有markdown标题
     )
