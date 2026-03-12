@@ -60,8 +60,7 @@ if st.session_state.popup_closed and st.session_state.user_choice is not None:
     
     user_input = st.text_area(
         label="问题输入框",
-        value="""假设你在一次朋友聚会中，大家随意聊到“选择东西时，选大众喜欢的和选小众特色的，哪种方式更好”这个话题。你已经对该问题有一个初步想法。出于好奇，你决定看看AI会怎么分析这个话题。
-接下来，请阅读AI的分析内容，并根据你的真实感受回答后续问题。""",
+        value="""我在一次朋友聚会中，大家随意聊到“选择东西时，选大众喜欢的和选小众特色的，哪种方式更好”这个话题。我决定看看AI会怎么分析这个话题。""",
         height=200,
         label_visibility="collapsed"  # 隐藏label,因为上面已经有markdown标题
     )
