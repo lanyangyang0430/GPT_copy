@@ -25,6 +25,7 @@ if "user_choice" not in st.session_state:
 # Display popup only if it hasn't been closed
 if not st.session_state.popup_closed:
     st.markdown("""
+## 任务情境
 假设你在一次朋友聚会中，大家随意聊到“选择东西时，选大众喜欢的和选小众特色的，哪种方式更好”这个话题。
 
 你已经对该问题有一个初步想法。
