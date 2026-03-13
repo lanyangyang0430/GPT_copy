@@ -20,6 +20,7 @@ if "user_choice" not in st.session_state:
 # Display popup only if it hasn't been closed
 if not st.session_state.popup_closed:
     st.markdown("""
+## 任务情境
 你所在的社团需要为招新活动选择宣传物料设计风格，你被邀请参加方案讨论会，需要建议设计方向：选大众喜欢的和选小众特色的，哪种方式更好？
 
 在讨论会上，你需要代表你所在的小组阐述立场，你的发言将直接影响最终的设计选择以及招新效果和社团形象。在正式发言前，你已经对该问题形成了一个初步看法。
